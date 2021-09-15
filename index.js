@@ -2,8 +2,8 @@
 
 const Discord = require("discord.js") //https://www.npmjs.com/package/discord-slash-commands
 const fs = require('fs')
-const Database = require("@replit/database")
-const Topgg = require("@top-gg/sdk")
+//const Database = require("@replit/database")
+//const Topgg = require("@top-gg/sdk")
 
 require('discord-reply')
 const keepAlive = require('./server')
@@ -14,8 +14,8 @@ const bot = new Discord.Client({
   intents: [Discord.Intents.FLAGS.GUILDS]
   })
 // disbut(bot);
-require('discord-buttons')(bot)
-require('discord-menu-embed')(bot)
+//require('discord-buttons')(bot)
+//require('discord-menu-embed')(bot)
 
 // const { REST } = require('@discordjs/rest');
 // const { Routes } = require('discord-api-types/v9');
@@ -25,10 +25,10 @@ require('discord-menu-embed')(bot)
 
 bot.config = require('./config/bot');
 bot.commands = new Discord.Collection()
-bot.interactions = new Discord.Collection()
-bot.db = new Database()
+//bot.interactions = new Discord.Collection()
+//bot.db = new Database()
 
-bot.number = (args, maxValue)=> {
+/*bot.number = (args, maxValue)=> {
   
   if (args === 'all') {
     return Number(maxValue)
@@ -55,7 +55,7 @@ bot.number = (args, maxValue)=> {
     return Number(args.slice(0, args.length - 1)) * postfixes[argPostfix]
     
   return Number(args);
-}
+}*/
 
 bot.getPrefix = async (message) => {
   if (!message) return
@@ -66,7 +66,7 @@ bot.getPrefix = async (message) => {
   return prefix
 }
 
-bot.addCommand = (guildId, command) => {
+/*bot.addCommand = (guildId, command) => {
   if (guildId)
     return bot.api.applications(bot.user.id).guilds(guildId).commands.post(command);
   return bot.api.applications(bot.user.id).commands.post(command);
@@ -82,7 +82,7 @@ bot.getCommand = async (guildId) => {
   if (!guildId)
     return await bot.api.applications(bot.user.id).commands.get()
   return await bot.api.applications(bot.user.id).guilds(guildId).commands.get()
-}
+}*/
 
 bot.sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 

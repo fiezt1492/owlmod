@@ -57,14 +57,14 @@ bot.commands = new Discord.Collection()
   return Number(args);
 }*/
 
-bot.getPrefix = async (message) => {
+/*bot.getPrefix = async (message) => {
   if (!message) return
   const guildId = message.guild.id
 
   const prefix = await bot.db.get(`${guildId}.prefix`) || process.env.PREFIX || `<@${bot.user.id}>` || `<@!${bot.user.id}>`
 
   return prefix
-}
+}*/
 
 /*bot.addCommand = (guildId, command) => {
   if (guildId)

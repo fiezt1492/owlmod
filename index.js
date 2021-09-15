@@ -6,7 +6,7 @@ const fs = require('fs')
 //const Topgg = require("@top-gg/sdk")
 
 require('discord-reply')
-const keepAlive = require('./server')
+//const keepAlive = require('./server')
 const bot = new Discord.Client({
   disableMentions : "everyone",
   shard : "auto",
@@ -121,5 +121,5 @@ for (const file of events) {
 
 // require('./Structures/backup.js')(bot)
 
-keepAlive(bot)
+//keepAlive(bot)
 bot.login(process.env.TOKEN)

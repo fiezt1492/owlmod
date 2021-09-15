@@ -100,7 +100,7 @@ bot.getUserFromMention = (args) => {
 
 
 //====
-fs.readdirSync('./commands').forEach(dirs => {
+/*fs.readdirSync('./commands').forEach(dirs => {
     const commands = fs.readdirSync(`./commands/${dirs}`).filter(files => files.endsWith('.js'));
 
     for (const file of commands) {
@@ -108,7 +108,7 @@ fs.readdirSync('./commands').forEach(dirs => {
         console.log(`Loading command ${file}`);
         bot.commands.set(command.name.toLowerCase(), command);
     }
-});
+});*/
 //====
 //===
 const events = fs.readdirSync('./events').filter(file => file.endsWith('.js'));

@@ -10,7 +10,8 @@ module.exports = async (bot, member) => {
   const members = guild.memberCount
 
   const embed = new MessageEmbed()
-	.setTitle('Welcome!',`https://www.youtube.com/channel/UCEG5sgFKieaUuHsu5VG-kBg`)
+	.setTitle('Welcome!')
+  .setURL(`https://www.youtube.com/channel/UCEG5sgFKieaUuHsu5VG-kBg`)
   .setAuthor(user.tag, user.displayAvatarURL({dynamic:true}))
 	.setColor('RANDOM')
   .setDescription(`Thanks for joining [Owlvernyte](https://www.facebook.com/owlvernyte)!`)

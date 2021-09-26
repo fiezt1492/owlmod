@@ -8,22 +8,6 @@ const bot = new Discord.Client({
   intents: [Discord.Intents.FLAGS.GUILDS]
   })
 
-bot.commands = new Discord.Collection()
-
-bot.sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms))
-
-bot.getUserFromMention = (args) => {
-  var mention, id, matches;
-  args.forEach((element, index) => {
-    if (index > 0 && id) return
-    matches = element.match(/^<@!?(\d+)>$/);
-	  if (!matches) return;
-	  return id = matches[1];
-  })
-	if (!id) return
-	return bot.users.cache.get(id);
-}
-
 const events = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
 
 for (const file of events) {

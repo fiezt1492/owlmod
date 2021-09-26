@@ -4,6 +4,7 @@ const webhook = new WebhookClient(process.env.WELCOMEID, process.env.WELCOMETOKE
 
 module.exports = async (bot, member) => {
   const user = await bot.users.fetch(member.id)
+  
   if (user.bot) return;
 	
   const guild = await bot.guilds.cache.get('830110554604961824')

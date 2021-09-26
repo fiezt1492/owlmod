@@ -1,8 +1,6 @@
 const Discord = require("discord.js") 
 const fs = require('fs')
 
-require('discord-reply')
-//const keepAlive = require('./server')
 const bot = new Discord.Client({
   disableMentions : "everyone",
   shard : "auto",

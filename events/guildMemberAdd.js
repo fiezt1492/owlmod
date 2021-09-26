@@ -5,7 +5,7 @@ const webhook = new WebhookClient(process.env.WELCOMEID, process.env.WELCOMETOKE
 //https://stackoverflow.com/questions/64618047/guild-member-add-does-not-work-discordjs
 module.exports = async (bot, member) => {
   const user = await bot.users.fetch(member.id)
-  if (user.bot) return;
+//   if (user.bot) return;
 	
   const guild = await bot.guilds.cache.get('830110554604961824')
   // const role = 

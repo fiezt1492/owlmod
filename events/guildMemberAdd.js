@@ -18,7 +18,7 @@ module.exports = async (bot, member) => {
 	.setColor('RANDOM')
   .setDescription(`Thanks for joining [Owlvernyte](https://www.facebook.com/owlvernyte)!`)
   .addField(`Main Channels`,`<#830113042858901554> - rules.\n<#830112358520979457> - unlock another channels.\n<#830110555221262348> - general chatting.`)
-  .addField(`vAc - voice AND chat`,`<#850610225122770965> - guide.\n<#850356965649547294> - join this to create your own voice and chat channel.
+  .addField(`vAc - voice AND chat`,`<#850356965649547294> - join this to create your own voice and chat channel.
 `)
   .addField(`Owlvernyte Bot`,`<#877763570065109032> - official annoucement of devs.\n<#877763480978063430> - report bugs or other issues.\n<#887342167054491659> - new to Owlvernyte? ask other player here.`)
   .setImage(`https://cdn.discordapp.com/attachments/852888201391374376/857857987099492382/ezgif-2-6b2302497da6.gif`)

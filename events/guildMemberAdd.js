@@ -17,7 +17,7 @@ module.exports = async (bot, member) => {
   .setAuthor(user.tag, user.displayAvatarURL({dynamic:true}))
 	.setColor('RANDOM')
   .setDescription(`Thanks for joining [Owlvernyte](https://www.facebook.com/owlvernyte)!`)
-  .addField(`Main Channels`,`<#830113042858901554> - rules.\n<#830112358520979457> - unlock another channels.\n<#830110555221262348> - general chatting.`)
+  .addField(`Main Channels`,`<#830113042858901554> - rules.\n<#830134593142521876> - unlock another channels.\n<#830110555221262348> - general chatting.`)
   .addField(`vAc - voice AND chat`,`<#850356965649547294> - join this to create your own voice and chat channel.
 `)
   .addField(`Owlvernyte Bot`,`<#877763570065109032> - official annoucement of devs.\n<#877763480978063430> - report bugs or other issues.\n<#887342167054491659> - new to Owlvernyte? ask other player here.`)
